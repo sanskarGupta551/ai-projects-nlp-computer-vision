@@ -193,7 +193,7 @@ This repository is a curated collection of **AI projects** spanning **Computer V
 * **Result**: Produced multi-sentence coherent synopses with logical flow from prompts.
 * **Tags**: `Transformers` · `GPT-2` · `Fine-Tuning` · `HuggingFace` · `Text Generation`
   
-  ![Image]([https://th.bing.com/th/id/R.62fed4c6ba6af08871ed40c89f4d0a44?rik=bHeTpfghWffTSQ\&riu=http%3a%2f%2fsusancushman.com%2fwp-content%2fuploads%2f2012%2f10%2f100_12691.jpg\&ehk=u%2fiowcjKxXZcabvS21Q2ExLG0g6YsIK6vJcgkcE7Xxc%3d\&risl=\&pid=ImgRaw\&r=0](https://i.pinimg.com/originals/08/9e/d4/089ed4e22bcd3e3f28e6327e8387617e.jpg))
+  ![Image](https://generatestory.io/wp-content/uploads/2024/11/Synopsis-Generator.png)
 
 ---
 
