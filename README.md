@@ -143,7 +143,7 @@ This repository is a curated collection of **AI projects** spanning **Computer V
 * **Action**: Fine-tuned GPT-2 using HuggingFace; applied causal LM loss and LR scheduling.
 * **Result**: Generated coherent multi-sentence synopses.
 * **Tags**: `Transformers` · `GPT-2` · `Fine-Tuning` · `Text Generation`
-  ![Image](https://th.bing.com/th/id/R.62fed4c6ba6af08871ed40c89f4d0a44?rik=bHeTpfghWffTSQ\&riu=http%3a%2f%2fsusancushman.com%2fwp-content%2fuploads%2f2012%2f10%2f100_12691.jpg\&ehk=u%2fiowcjKxXZcabvS21Q2ExLG0g6YsIK6vJcgkcE7Xxc%3d\&risl=\&pid=ImgRaw\&r=0)
+  ![Image](https://th.bing.com/th/id/R.62fed4c6ba6af08871ed40c89f4d0a44?rik=bHeTpfghWffTSQ&riu=http%3a%2f%2fsusancushman.com%2fwp-content%2fuploads%2f2012%2f10%2f100_12691.jpg&ehk=u%2fiowcjKxXZcabvS21Q2ExLG0g6YsIK6vJcgkcE7Xxc%3d&risl=&pid=ImgRaw&r=0)
 
 ---
 
@@ -154,6 +154,7 @@ This repository is a curated collection of **AI projects** spanning **Computer V
 * **Action**: Built transformer causal LM, tested multiple prompt sizes.
 * **Result**: Produced coherent multi-paragraph stories with consistent characters.
 * **Tags**: `Transformers` · `Causal LM` · `Long-Context Modeling` · `Text Generation`
+  ![Image](https://miro.medium.com/v2/resize\:fit:1400/1*lCOIr6tlsKd8N247Ec9MBg.png)
 
 ---
 
@@ -166,11 +167,10 @@ This repository is a curated collection of **AI projects** spanning **Computer V
 * **Action**: Used HuggingFace pipelines (vision encoders + causal LM).
 * **Result**: Produced imaginative narratives across diverse images.
 * **Tags**: `Multi-Modal AI` · `Vision+Language` · `Transformers` · `Story Generation`
-
+  ![Image](https://medium.com/images/ai-image-to-story-example.jpg)
 
 ---
 
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
-
