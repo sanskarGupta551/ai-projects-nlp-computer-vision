@@ -1,164 +1,117 @@
-# Ai_Projects___Topic_and_Code_Explained
+# 🧠 AI Projects: NLP & Computer Vision
 
-* This `Public Template` repository consists of all of [@sanskarGupta551](https://github.com/sanskarGupta551)'s Projects since `Year 2022`.
+This repository is a curated collection of **end-to-end AI projects** spanning **Computer Vision**, **Natural Language Processing (NLP)**, and **Multi-Modal AI**. Each project is implemented in a **self-contained Jupyter Notebook** (or script) with explanations, code, and results.
 
-* All Projects will have -
-    1. A `Jupyter Notebook` Explaining the Topic and the Code Implementation, `and`
-    2. `End Results` in the form of Python Scripts, Apps, Images or Video Links `if possible`.
+The repo is structured to demonstrate both **breadth of exploration** and **depth of implementation**, making it suitable as both a **learning hub** and a **portfolio showcase**.
 
-## A. Computer Vision 
+🔗 Useful Links:
 
-* This section consists of Projects built with the purpose of `Learning and Understanding` Applications of `Computer Vision` to solve Real World Problems.
+* 📂 [GitHub Repo](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision)
+* 🤖 [Hugging Face Transformers](https://huggingface.co/docs/transformers/index)
+* 🖼️ [Keras Applications](https://keras.io/api/applications/)
+* 📊 [Fashion-MNIST Dataset](https://github.com/zalandoresearch/fashion-mnist)
+* 📸 [Flickr30k Dataset](https://shannon.cs.illinois.edu/DenotationGraph/)
 
-1. [Face Mask Detection with VGG16](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/blob/main/Computer_Vision___Face_Mask_Detection_with_VGG16/Face_Mask_Detection_with_VGG16.ipynb)
+---
 
-    * `Face Mask Detection` is a system that uses `Computer Vision` and Deep Learning to determine whether a person
-is wearing a `mask` or not.
-    > Here, we Build a `Face Mask Detection` model using `CNNs`(Convolutional Neural Networks) and a [VGG16](https://www.tensorflow.org/api_docs/python/tf/keras/applications/vgg16/VGG16) base, then Train it using `Transfer Learning` on our Dataset.
-    * At last, we load the `Best Model` saved using our pre-defined `Callback` and `Test` our model on `Unseen Data`.
-    * `Dataset` - [Face Mask Detection ~12K Images Dataset](https://www.kaggle.com/datasets/ashishjangra27/face-mask-12k-images-dataset) from Kaggle.
+## 📂 Projects
 
-![Image](https://www.intertecsystems.com/wp-content/uploads/2020/05/face-mask-detection-software-e1591538656411.png)
+### 🖼️ Computer Vision
 
-2. [Facial Emotion Recognition with VGG16](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/blob/main/Computer_Vision___Facial_Emotion_Recognition_with_VGG16/Facial_Emotion_Recognition_with_VGG16.ipynb)
+1. [**Face Mask Detection with VGG16**](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Face_Mask_Detection_with_VGG16.ipynb)
 
-    * `Facial Emotion Recognition` (FER) is a subfield of Facial Recognition that involves `identifying` and categorizing `Human Emotions` based on Facial expressions.
-    > Here, we Build a `Facial Emotion Recognition` model by loading the [VGG16](https://www.tensorflow.org/api_docs/python/tf/keras/applications/vgg16/VGG16) base trained on `Imagenet` without thr Top layer, `Adapt` it to our current problem, and Train it using `Transfer Learning` on our Dataset. 
-    * Then, we load the `Best Model` saved using our pre-defined `Callback` and `Test` our model on a few `Images`.
-    * At last, we test our Model on `Videos` with added complexity of [Haar Cascade](https://docs.opencv.org/3.4/d2/d99/tutorial_js_face_detection.html) to improve `Model Accuracy`.
-    * `Dataset` - [FER2013 Dataset](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) from Kaggle.
+   * **Situation**: Needed during COVID-19 to monitor mask compliance.
+   * **Task**: Detect whether a person is wearing a mask.
+   * **Action**: Transfer learning with **VGG16** + image augmentation.
+   * **Result**: Achieved high-accuracy mask detection suitable for real-time monitoring.
 
-![Image](https://i.pinimg.com/originals/b0/bb/1d/b0bb1d0b86bdca1de8ead928064d09d8.png)
+2. [**Facial Emotion Recognition with VGG16**](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Facial_Emotion_Recognition_with_VGG16.ipynb)
 
-3. [Fashion MNIST with CNN(s)](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/blob/main/Computer_Vision___Fashion_MNIST_with_CNN(s)/Fashion_MNIST_with_CNN(s).ipynb)
+   * **Situation**: Emotion recognition is key for healthcare & user experience.
+   * **Task**: Classify facial expressions into emotion categories.
+   * **Action**: Fine-tuned **VGG16** on FER datasets with categorical encoding.
+   * **Result**: Model correctly classifies multiple emotions (happy, sad, angry, etc.).
 
-    > [Fashion MNIST](https://keras.io/api/datasets/fashion_mnist/) is a `Image Classification` dataset with `28x28` grayscale images of `10` Fashion categories.
-    * This is a classic `Computer Vision` problem, often one of the first projects built by any `Computer Vision` enthusiast.
-    * Here, we will build a` Deep Learning model` using `Convolutional Neural Networks (CNNs)` to solve this Image Classification problem.
-    * `Dataset` - [Fashion MNIST](https://keras.io/api/datasets/fashion_mnist/) from Keras.
+3. [**Fashion MNIST Classification with CNNs**](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Fashion_MNIST_with_CNN%28s%29.ipynb)
 
-![Image](https://thiagolcmelo.github.io/assets/img/fashion-mnist.png)
+   * **Situation**: Benchmark dataset for image classification.
+   * **Task**: Train CNNs to classify clothes into 10 categories.
+   * **Action**: Built multiple CNN architectures, trained & evaluated on Fashion-MNIST.
+   * **Result**: Achieved >90% accuracy on test set.
 
-4. [Green Screening Images and Videos with OpenCV](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/blob/main/Computer_Vision___Green_Screening_Images_and_Videos_with_OpenCV/Green_Screening_Images_and_Videos_with_OpenCV.ipynb)
+4. [**Green Screening with OpenCV**](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Green_Screening_Images_and_Videos_with_OpenCV.ipynb)
 
-    * `Green Screening` is a technique that allows you to place any `Background` picture you want `behind` the performers or the `Foreground`.
-    * Here, we first `Understand` how `Green Screening` works with the help of a `Computer Vision` library [OpenCV](https://opencv.org/) using different `Images` as Foreground and Background.
-    > Then, we will perform `Green Screening` of a `Video` of `Steve Dancing` with a few different `Videos` sewed together as Background. 
-    * `Dataset` - `None`.
+   * **Situation**: Green screening (chroma keying) widely used in media production.
+   * **Task**: Replace backgrounds in images & videos.
+   * **Action**: Implemented background segmentation & replacement using **OpenCV**.
+   * **Result**: Real-time replacement of green background with chosen scenes.
 
-![Image](https://i.ytimg.com/vi/JfyzwWgZT4M/maxresdefault.jpg)
+5. [**Image Deblurring with VGG16 + DCGAN**](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Image_Deblurring_with_VGG16.ipynb)
 
-5. [Image Captioning with Flickr30k](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/blob/main/Computer_Vision___Image_Captioning_with_Flickr30k/Image_Captioning_with_Flickr30k.ipynb)
+   * **Situation**: Blurred images reduce clarity in photos, surveillance, and medical imaging.
+   * **Task**: Restore sharpness of blurred images.
+   * **Action**: Built a **DCGAN-based model** enhanced with **VGG16 feature loss**.
+   * **Result**: Restored sharper and more visually appealing images.
 
-    * `Image Captioning` is the task of `describing` the content of an `Image` in words.
-    > Here, we build an `Encoder Model` using `LSTM` (Long-Short Term Memory), which is a type of `RNN` (Recurrent Neural Network), and `Train` it on our pre-processed Dataset.
-    * At last, we `Test` this Model on a few `Unseen Images`.
-    * `Dataset` - [Flickr30k](https://www.kaggle.com/datasets/eeshawn/flickr30k/data)
+6. [**Image Captioning with Flickr30k**](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Image_Captioning_with_Flickr30k.ipynb)
 
-![Image](https://petapixel.com/assets/uploads/2016/09/Caption1-800x450.jpg)
+   * **Situation**: Image captioning supports accessibility & media search.
+   * **Task**: Train model to describe images in words.
+   * **Action**: Combined **VGG16 feature extraction** with **LSTMs** for sequence generation.
+   * **Result**: Generated coherent captions (e.g., “A dog playing with a child”).
 
-6. [Image Deblurring with VGG16](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/blob/main/Computer_Vision___Image_Deblurring_with_VGG16/Image_Deblurring_with_VGG16.ipynb)
+---
 
-    * `Image Deblurring` is a process of `restoring` a sharp image from a `blurred` input `Image`.
-    * Here, we first `Build` a Mixed Blur `Dataset` from `Scratch`.
-    > Then we build a Model using [VGG16](https://www.tensorflow.org/api_docs/python/tf/keras/applications/vgg16/VGG16) base and `Train` it on our custom Blur Dataset.
-    * At last, we will `Evaluate Accuracy` of our Model and `Test` it on a few `Images`.
-    * `Dataset` - `Built from Scratch`.
+### 📝 Natural Language Processing (NLP)
 
-![Image](https://th.bing.com/th/id/R.1c95a17451c44bb937d2275bc6ae14d9?rik=FClK479meeWRPA&riu=http%3a%2f%2fwww.ece.northwestern.edu%2flocal-apps%2fmatlabhelp%2ftoolbox%2fimages%2fdeblu10a.gif&ehk=VTBAkwI%2bK%2b2lqG5JtdUoByh24GOJfmcoo8RGX8xAyiY%3d&risl=&pid=ImgRaw&r=0)
+7. [**Tweets Sentiment Analysis with 3 Neural Networks**](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Tweets_Sentiment_Analysis_with_3_Neural_Network.ipynb)
 
-## B. Natural Language Processing
+   * **Situation**: Tweets reflect diverse public sentiment.
+   * **Task**: Build sentiment classifiers with neural networks.
+   * **Action**: Designed and trained 3 **DNN architectures** with preprocessing pipeline.
+   * **Result**: Successfully classified tweets into positive/negative/neutral categories.
 
-* This section consists of Projects built with the purpose of `Learning and Understanding` Applications of `Natural Language Processing` to solve Real World Problems.
+8. [**GenZ Tweets Data Pipeline for Sentiment Analysis**](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/GenZ_Tweets_Data_Pipeline_for_Sentiment_Analysis.ipynb)
 
-1. [GenZ Tweets Data Pipeline for Sentiment Analysis](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/blob/main/NLP___GenZ_Tweets_Data_Pipeline_for_Sentiment_Analysis/GenZ_Tweets_Data_Pipeline_for_Sentiment_Analysis.ipynb)
+   * **Situation**: Real-world data is noisy and unstructured.
+   * **Task**: Build robust preprocessing pipeline for tweets.
+   * **Action**: Used **NLTK + SpaCy** for tokenization, lemmatization, stopword removal, regex cleaning, and emoji normalization.
+   * **Result**: Produced clean, structured data improving downstream ML performance.
 
-    * `Data Preprocessing Pipelines` are an efficient and organized way of handling `raw data`. They can be `specialized` for specific tasks, and once created, automate the entire process.
-    > This notebook is a step-by-step process of `How to create a Data Preprocessing Pipeline`, where `Data` is the `Text`, in our case more complicated `GenZ Tweets`.
-    * In the end, we will `Apply` this `Pipeline` to some `GenZ Tweets`.
-    * `Dataset` - `None`.
+9. [**Next Word Prediction with Bi-Directional LSTM**](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Next_Word_Prediction_with_Bidirectional_LSTM.ipynb)
 
-![Image](https://i.pinimg.com/originals/e1/d0/33/e1d0330eb3bfd698f6c332e0d61f6d11.png)
+   * **Situation**: Predicting the next word is core to autocomplete & search.
+   * **Task**: Train a language model to predict next words.
+   * **Action**: Implemented **Bi-LSTM sequence model** on text data with embeddings.
+   * **Result**: Generated context-aware predictions for text completion.
 
-2. [Next Word Prediction with Bidirectional LSTM](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/blob/main/NLP___Next_Word_Prediction_with_Bidirectional_LSTM/Next_Word_Prediction_with_Bidirectional_LSTM.ipynb)
+10. [**Prompt-to-Synopsis Generator (Fine-Tuning)**](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Prompt_to_Synopsis_Generator_%28Fine-Tuning%29.ipynb)
 
-    * `Next Word Prediction` (also called Language Modeling) is the task of `predicting` what `word` comes next. It is one of the fundamental tasks of `NLP`.
-    > Here, we will use `NLP` and try to make a prediction model using `Bidirectional LSTM` (Long short-term memory) model that will predict `next words` of sentence.
-    * At last, we will use the `Model` to try and `Predict Next Words` with `Random Text` and see how much `Context` persists over time.
-    * `Dataset` - [Medium Articles Dataset](https://www.kaggle.com/datasets/dorianlazar/medium-articles-dataset)
+* **Situation**: Creative industries need AI that can expand prompts into stories.
+* **Task**: Fine-tune a transformer model to generate synopses from prompts.
+* **Action**: Used **HuggingFace Transformers** to fine-tune, evaluate, and test prompts.
+* **Result**: Produced structured multi-sentence synopses from one-line prompts.
 
-![Image](https://i.pinimg.com/originals/3f/b4/2e/3fb42e1f042063e0423496529978dd8e.jpg)
+11. [**AI Long-Form Story Generator with Varied Context**](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Ai_Long_form_Story_Generator_with_Varied_Context.ipynb)
 
-3. [Prompt to Synopsis Generator (Fine-Tuning)](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/blob/main/NLP___Prompt_to_Synopsis_Generator_(Fine-Tuning)/Prompt_to_Synopsis_Generator_(Fine-Tuning).ipynb)
+* **Situation**: Longer context windows improve story coherence.
+* **Task**: Generate long narratives conditioned on different context lengths.
+* **Action**: Built story generator using **transformer-based causal models** with varied prompt designs.
+* **Result**: Generated coherent long-form stories, balancing creativity & coherence.
 
-    * A `Synopsis` is a brief `summary` of the `main plot` points of a written work, such as an article, essay, story, book, or other written work.
-    * It provides a `general overview` of the work and may also include a thematic statement.
-    > In this Notebook, we `Train` a `Synopsis Generator` model by `Fine-Tuning` a pre-trained model to generate `Synopsis` using `Prompts`.
-    * At last, we will `Generate Synopsis` using some `Text`.
-    * `Dataset` - [MPST: Movie Plot Synopses with Tags](https://www.kaggle.com/datasets/cryptexcode/mpst-movie-plot-synopses-with-tags)
+---
 
-![Image](https://th.bing.com/th/id/R.62fed4c6ba6af08871ed40c89f4d0a44?rik=bHeTpfghWffTSQ&riu=http%3a%2f%2fsusancushman.com%2fwp-content%2fuploads%2f2012%2f10%2f100_12691.jpg&ehk=u%2fiowcjKxXZcabvS21Q2ExLG0g6YsIK6vJcgkcE7Xxc%3d&risl=&pid=ImgRaw&r=0)
+### 🔮 Multi-Modal AI
 
-4. [Tweets Sentiment Analysis with 3 Neural Network](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/blob/main/NLP___Tweets_Sentiment_Ananlysis_with_3_Neural_Networks/Tweets_Sentiment_Analysis_with_3_Neural_Network.ipynb)
+12. [**AI Imagining Stories from Images**](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Ai_Imagining_Stories_from_Images.ipynb)
 
-    * `Sentiment Analysis` is a technique in NLP that aims to `classify` the mood or `mentality` expressed in a block of `text` as positive, negative, or neutral.
-    * A `Deep Neural Network` (DNN) is an Artificial Neural Network (ANN) with `multiple layers` between the `input` and `output` layers.
-    > In this project, we `Build` and `Train` 3 Deep Neural Networks for `Sentiment Analysis`, and then, we `Compare` the `Accuracy` of all `3 Neural Networks`.
-    * `Dataset` - [Sentiment Dataset with 1 Million Tweets](https://www.kaggle.com/datasets/tariqsays/sentiment-dataset-with-1-million-tweets)
+* **Situation**: Images often hide stories that can be narrated.
+* **Task**: Build AI that generates stories based on images.
+* **Action**: Combined **vision encoders** with **causal language models** to generate stories from input images.
+* **Result**: Produced creative and contextually relevant narratives for diverse images (fantasy scenes, professional settings, etc.).
 
-![Image](https://www.altexsoft.com/media/2018/09/sentiment_analysis.jpg)
+---
 
-## C. Theory Notebooks
+## 📜 License
 
-* This section consists of simple and easy Notebooks based on `Random Ideas`, `Introductions`, `Documentations`, etc.
-
-1. [Ai Imagining Stories from Images](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/blob/main/Theory_Notebooks/Ai_Imagining_Stories_from_Images.ipynb)
-
-    * **A picture is worth a Thousand words.**
-    * In this project, we setup an `AI` system that can generate imaginative and engaging `stories` based on input `images`.
-    > Then, we discuss some other `Applications` in various `Real World Scenarios`.
-
-2. [Ai Long form Story Generator with Varied Context](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/blob/main/Theory_Notebooks/Ai_Long_form_Story_Generator_with_Varied_Context.ipynb)
-
-    * In this Notebook, we Perform `Story Generation` by taking in `varied` levels of `Context` as inputs.
-    > Then, we `Explore` how `Effective` is consumption of more `Context` in Generating Better Stories.
-
-3. [AutoML - A Brief Introduction](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/blob/main/Theory_Notebooks/AutoML___A_Brief_Introduction.ipynb)
-
-    * `AutoML`, short for `Automated Machine Learning`, is an emerging field that `automates` the end-to-end process of applying `Machine Learning` to real-world problems.
-    > Here in this Notebook, we have a `Brief Introduction of AutoML`.
-
-## D. Upcoming Projects
-
-* This section consists of `Upcoming` Projects that are still `under work`.
-
-1. [(Building)Portfolio Project - Live Authentic Audience](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/tree/main/(Building)Portfolio_Project___Live_Authentic_Audience)
-
-    * This is my biggest project yet.
-    > In this project, we will build an `AI App` that will see and hear us like an `Audience` and `Generate responses` like an `Authentic Crowd` of Audience in `realtime`.
-    * This `AI system` will contain many `AI` tech like - `Speech Emotion Recogntion`, `Facial Emotion Recognition`, `Chatbots` and `Speech Sythesis` (for Heckling), etc.
-    * We will make it `User-friendly` by compiling it into an `AI Web App` by using suitable `Python API/ Streamlit` or we can also use other Apps like [Unity3D](https://unity.com) or [Blender3D](https://www.blender.org).
-
-![Image](https://i1.wp.com/voiceable.ai/wp-content/uploads/2016/12/cropped-audience.jpg?ssl=1)
-
-## E. Future Projects
-
-* This section consists of `Future` Projects that are `next in line` to be worked upon.
-
-1. [Computer Vision - Ingredient to Recipe Search Engine](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/tree/main/Upcoming_Projects/Computer_Vision___Ingredient_to_Recipe_Search_Engine)
-
-    * A Web App that takes `Images of Ingredients` you have and writes down a few `different recipe` that you can try with the given `Imgredients`.
-
-2. [Computer Vision - Face Swapper](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/tree/main/Upcoming_Projects/Computer_Vision___Face_Swapper)
-
-    * An `Web App` using which you can `Swap your Face` with Another in a `Live` Video, `Recorded` Video, or `Images`.
-
-3. [NLP - Long form Story Generator using Deep Learning](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/tree/main/Upcoming_Projects/NLP___Long_form_Story_Generator_using_Deep_Learning)
-
-    * A `Web App` where using a `Topic` and little `Context`, one can generate vast amount of `Text`, enough to write a book over any `Point of Interest`.
-
-4. [Computer Vision - Ai Comic Generator](https://github.com/sanskarGupta551/Ai_Projects___Topic_and_Code_Explained/tree/main/Upcoming_Projects/Computer_Vision___Ai_Comic_Generator)
-
-    * A `Web App` that can generate quality `Comics` using a `Topic`, a bit of `Context`, and some `Art Reference`.
-  
-
+This project is licensed under the [MIT License](LICENSE).
