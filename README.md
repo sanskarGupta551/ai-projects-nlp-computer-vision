@@ -35,197 +35,138 @@ This repository is a curated collection of **AI projects** spanning **Computer V
 
 ### 🖼️ Computer Vision
 
-#### 1. [Face Mask Detection with VGG16](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Computer-Vision/Face_Mask_Detection_with_VGG16.ipynb)
+#### 1. [Face Mask Detection with VGG16](Computer-Vision/Face_Mask_Detection_with_VGG16.ipynb)
 
-* **Situation**: During COVID-19, monitoring mask compliance became critical in public spaces.
-* **Task**: Build a system to automatically detect masks from images of people.
-* **Action**:
-
-  * Fine-tuned **VGG16 (transfer learning)** pretrained on ImageNet.
-  * Applied **data augmentation** (rotation, flipping, zoom) for robustness.
-  * Built a binary classifier on labeled mask/no-mask dataset.
-* **Result**: Achieved **97% accuracy** on validation data, demonstrating production feasibility for surveillance and healthcare use cases.
-* **Tags**: `TensorFlow` · `Keras` · `Transfer Learning` · `CNN` · `Image Classification` · `Model Deployment`
-
-<img src="assets/mask_detection.png" width="500">
+* **Situation**: COVID-19 demanded scalable mask compliance monitoring.
+* **Task**: Detect whether a person is wearing a mask.
+* **Action**: Fine-tuned VGG16 with transfer learning, applied augmentation, trained on \~12K Kaggle dataset.
+* **Result**: Achieved **97% validation accuracy**.
+* **Tags**: `TensorFlow` · `Keras` · `Transfer Learning` · `CNN` · `Image Classification`
+  ![Image](https://www.intertecsystems.com/wp-content/uploads/2020/05/face-mask-detection-software-e1591538656411.png)
 
 ---
 
-#### 2. [Facial Emotion Recognition with VGG16](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Computer-Vision/Facial_Emotion_Recognition_with_VGG16.ipynb)
+#### 2. [Facial Emotion Recognition with VGG16](Computer-Vision/Facial_Emotion_Recognition_with_VGG16.ipynb)
 
-* **Situation**: Emotion recognition is important in **mental health monitoring, human-computer interaction, and customer analytics**.
-* **Task**: Develop a model to classify facial images into multiple emotions.
-* **Action**:
-
-  * Preprocessed **FER-2013 dataset** with grayscale normalization & augmentation.
-  * Fine-tuned **VGG16** with added dense layers for 7-class classification.
-  * Used **categorical cross-entropy loss** and early stopping.
-* **Result**: Reached **72% accuracy**, surpassing traditional ML baselines (e.g., SVMs \~45%).
-* **Tags**: `Keras` · `VGG16` · `Image Classification` · `Emotion Recognition` · `Transfer Learning` · `FER-2013`
-
-<img src="assets/emotion_recognition.png" width="500">
+* **Situation**: Emotion recognition is vital for healthcare, customer analytics, and HCI.
+* **Task**: Classify facial emotions into discrete categories.
+* **Action**: Adapted VGG16 (Imagenet base), trained on FER2013 dataset with Haar cascade preprocessing.
+* **Result**: Achieved **72% accuracy**, significantly above classical baselines.
+* **Tags**: `Keras` · `VGG16` · `FER-2013` · `Emotion Recognition` · `Transfer Learning`
+  ![Image](https://i.pinimg.com/originals/b0/bb/1d/b0bb1d0b86bdca1de8ead928064d09d8.png)
 
 ---
 
-#### 3. [Fashion MNIST Classification with CNNs](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Computer-Vision/Fashion_MNIST_with_CNN%28s%29.ipynb)
+#### 3. [Fashion MNIST Classification with CNNs](Computer-Vision/Fashion_MNIST_with_CNN%28s%29.ipynb)
 
-* **Situation**: Fashion MNIST is a standard benchmark for testing deep learning models on real-world classification tasks.
-* **Task**: Classify clothing images into 10 categories.
-* **Action**:
-
-  * Built multiple **CNN architectures** (2–4 conv layers, pooling, dropout).
-  * Compared models using accuracy and loss curves.
-  * Visualized feature maps for interpretability.
-* **Result**: Achieved **92% accuracy** on test set with deeper CNN.
-* **Tags**: `TensorFlow` · `CNN` · `Fashion-MNIST` · `Model Comparison` · `Deep Learning`
-
-
+* **Situation**: Benchmark dataset for image classification.
+* **Task**: Classify 28x28 grayscale clothing images into 10 categories.
+* **Action**: Built multiple CNNs of varying depth, evaluated performance.
+* **Result**: Best CNN achieved **92% accuracy** on test set.
+* **Tags**: `TensorFlow` · `CNN` · `Fashion-MNIST` · `Model Comparison`
+  ![Image](https://thiagolcmelo.github.io/assets/img/fashion-mnist.png)
 
 ---
 
-#### 4. [Green Screening with OpenCV](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Computer-Vision/Green_Screening_Images_and_Videos_with_OpenCV.ipynb)
+#### 4. [Green Screening with OpenCV](Computer-Vision/Green_Screening_Images_and_Videos_with_OpenCV.ipynb)
 
-* **Situation**: **Film, broadcasting, and AR applications** rely on chroma key (green screen).
-* **Task**: Replace green backgrounds in images and videos with arbitrary scenes.
-* **Action**:
-
-  * Used **OpenCV** to detect and mask green pixel ranges.
-  * Replaced with background images/videos dynamically.
-  * Implemented for both static images and live video streams.
-* **Result**: Delivered real-time background replacement with smooth transitions.
-* **Tags**: `OpenCV` · `Computer Vision` · `Chroma Keying` · `Real-Time Video Processing`
-
-<img src="assets/fashion_mnist.png" width="500">
+* **Situation**: Green screening (chroma keying) is used in film, media, and AR.
+* **Task**: Replace green backgrounds in media with new scenes.
+* **Action**: Applied OpenCV masking on green pixels; tested on both images and videos.
+* **Result**: Delivered smooth real-time background replacement.
+* **Tags**: `OpenCV` · `Chroma Keying` · `Real-Time Processing` · `Computer Vision`
+  ![Image](https://i.ytimg.com/vi/JfyzwWgZT4M/maxresdefault.jpg)
 
 ---
 
-#### 5. [Image Deblurring with VGG16 + DCGAN](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Computer-Vision/Image_Deblurring_with_VGG16.ipynb)
+#### 5. [Image Deblurring with VGG16 + DCGAN](Computer-Vision/Image_Deblurring_with_VGG16.ipynb)
 
-* **Situation**: Blurred images affect critical fields like **surveillance and medical imaging**.
-* **Task**: Restore sharpness in blurred images.
-* **Action**:
-
-  * Built a **DCGAN generator-discriminator architecture**.
-  * Used **VGG16 perceptual loss** to guide training.
-  * Trained on custom mixed-blur dataset (motion blur, Gaussian blur).
-* **Result**: Restored sharper images with **SSIM score improvement of +18% over baseline interpolation**.
+* **Situation**: Blur reduces image clarity in surveillance and healthcare.
+* **Task**: Restore sharpness of blurred images.
+* **Action**: Built mixed-blur dataset; trained DCGAN with VGG16 perceptual loss.
+* **Result**: Improved SSIM by **+18% over baseline interpolation**.
 * **Tags**: `GAN` · `DCGAN` · `VGG16` · `Image Restoration` · `Perceptual Loss`
-
-<img src="assets/deblurring.png" width="500">
+  ![Image](https://th.bing.com/th/id/R.1c95a17451c44bb937d2275bc6ae14d9?rik=FClK479meeWRPA\&riu=http%3a%2f%2fwww.ece.northwestern.edu%2flocal-apps%2fmatlabhelp%2ftoolbox%2fimages%2fdeblu10a.gif\&ehk=VTBAkwI%2bK%2b2lqG5JtdUoByh24GOJfmcoo8RGX8xAyiY%3d\&risl=\&pid=ImgRaw\&r=0)
 
 ---
 
-#### 6. [Image Captioning with Flickr30k](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Computer-Vision/Image_Captioning_with_Flickr30k.ipynb)
+#### 6. [Image Captioning with Flickr30k](Computer-Vision/Image_Captioning_with_Flickr30k.ipynb)
 
-* **Situation**: **Image captioning aids accessibility** for the visually impaired and powers multimedia search.
-* **Task**: Generate natural language descriptions of images.
-* **Action**:
-
-  * Extracted features with **VGG16 encoder**.
-  * Trained **LSTM decoder** with teacher forcing on Flickr30k captions.
-  * Evaluated with BLEU scores.
-* **Result**: Generated fluent captions like *“A boy playing with a dog in the grass”* with **BLEU-4 ≈ 0.41**.
-* **Tags**: `VGG16` · `LSTM` · `Seq2Seq` · `Encoder-Decoder` · `Image Captioning` · `Flickr30k`
-
-<img src="assets/image_captioning.png" width="500">
+* **Situation**: Automatic captioning helps accessibility and content indexing.
+* **Task**: Train a model to generate captions for images.
+* **Action**: Built encoder-decoder model (VGG16 + LSTM) trained on Flickr30k dataset.
+* **Result**: Generated fluent captions, BLEU-4 ≈ **0.41**.
+* **Tags**: `VGG16` · `LSTM` · `Seq2Seq` · `Encoder-Decoder` · `Image Captioning`
+  ![Image](https://petapixel.com/assets/uploads/2016/09/Caption1-800x450.jpg)
 
 ---
 
 ### 📝 Natural Language Processing (NLP)
 
-#### 7. [Tweets Sentiment Analysis with 3 Neural Networks](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/NLP/Tweets_Sentiment_Analysis_with_3_Neural_Network.ipynb)
+#### 7. [Tweets Sentiment Analysis with 3 Neural Networks](NLP/Tweets_Sentiment_Analysis_with_3_Neural_Network.ipynb)
 
-* **Situation**: Businesses and political campaigns monitor sentiment on Twitter for decision-making.
-* **Task**: Classify tweets into positive, negative, or neutral sentiment.
-* **Action**:
-
-  * Built three deep neural network architectures (DNN, CNN, RNN).
-  * Preprocessed with regex, stopword removal, embeddings (GloVe).
-  * Compared architectures on accuracy/F1.
-* **Result**: Best-performing CNN achieved **88% accuracy** on test data.
+* **Situation**: Sentiment insights from Twitter are valuable for marketing and politics.
+* **Task**: Build and compare multiple deep learning models for sentiment classification.
+* **Action**: Preprocessed text with regex, embeddings; trained DNN, CNN, and RNN.
+* **Result**: CNN achieved **88% accuracy**, outperforming other architectures.
 * **Tags**: `NLP` · `Sentiment Analysis` · `DNN` · `CNN` · `RNN` · `Embeddings`
-
-<img src="assets/tweet_sentiment.png" width="500">
-
----
-
-#### 8. [GenZ Tweets Data Pipeline for Sentiment Analysis](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/NLP/GenZ_Tweets_Data_Pipeline_for_Sentiment_Analysis.ipynb)
-
-* **Situation**: Raw social media data is noisy with slang, emojis, and hashtags.
-* **Task**: Design a reusable pipeline for tweet preprocessing.
-* **Action**:
-
-  * Implemented **regex cleaning, tokenization, lemmatization**.
-  * Normalized emojis, URLs, and @mentions.
-  * Built pipeline both in Jupyter and as a **standalone Python script**.
-* **Result**: Produced clean, structured text improving sentiment model accuracy by \~10%.
-* **Tags**: `NLP` · `Data Pipeline` · `Regex` · `NLTK` · `SpaCy` · `Preprocessing`
-
-<img src="assets/tweet_pipeline.png" width="500">
+  ![Image](https://www.altexsoft.com/media/2018/09/sentiment_analysis.jpg)
 
 ---
 
-#### 9. [Next Word Prediction with Bi-Directional LSTM](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/NLP/Next_Word_Prediction_with_Bidirectional_LSTM.ipynb)
+#### 8. [GenZ Tweets Data Pipeline for Sentiment Analysis](NLP/GenZ_Tweets_Data_Pipeline_for_Sentiment_Analysis.ipynb)
 
-* **Situation**: Next-word prediction powers **mobile keyboards and search engines**.
-* **Task**: Build a language model to predict the next word.
-* **Action**:
+* **Situation**: Social media data is noisy with slang, emojis, and hashtags.
+* **Task**: Build preprocessing pipeline to clean GenZ tweets.
+* **Action**: Regex cleaning, tokenization, lemmatization, emoji & URL normalization.
+* **Result**: Improved downstream sentiment model accuracy by \~10%.
+* **Tags**: `NLP` · `Data Pipeline` · `Regex` · `NLTK` · `SpaCy`
+  ![Image](https://i.pinimg.com/originals/e1/d0/33/e1d0330eb3bfd698f6c332e0d61f6d11.png)
 
-  * Preprocessed text corpus into n-grams.
-  * Trained a **Bi-LSTM sequence model** with embeddings.
-  * Evaluated using perplexity and prediction accuracy.
-* **Result**: Generated accurate predictions with **perplexity reduced to \~35**, suitable for autocomplete.
+---
+
+#### 9. [Next Word Prediction with Bi-LSTM](NLP/Next_Word_Prediction_with_Bidirectional_LSTM.ipynb)
+
+* **Situation**: Next word prediction is a core task for autocomplete and search engines.
+* **Task**: Train Bi-LSTM model for next-word prediction.
+* **Action**: Preprocessed text corpus into sequences, trained Bi-LSTM with embeddings.
+* **Result**: Reduced perplexity to **\~35**; generated contextually accurate predictions.
 * **Tags**: `Bi-LSTM` · `Language Modeling` · `Sequence Prediction` · `Text Generation`
-
-<img src="assets/next_word.png" width="500">
-
----
-
-#### 10. [Prompt-to-Synopsis Generator (Fine-Tuning)](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/NLP/Prompt_to_Synopsis_Generator_%28Fine-Tuning%29.ipynb)
-
-* **Situation**: Entertainment & content industries need tools to expand short prompts into story outlines.
-* **Task**: Fine-tune transformer to generate synopses from short prompts.
-* **Action**:
-
-  * Fine-tuned **GPT-2 using HuggingFace Transformers**.
-  * Applied causal LM loss, LR scheduling, and early stopping.
-  * Evaluated coherence & diversity of outputs.
-* **Result**: Produced multi-sentence coherent synopses with logical flow from prompts.
-* **Tags**: `Transformers` · `GPT-2` · `Fine-Tuning` · `HuggingFace` · `Text Generation`
-
-<img src="assets/prompt_synopsis.png" width="500">
+  ![Image](https://i.pinimg.com/originals/3f/b4/2e/3fb42e1f042063e0423496529978dd8e.jpg)
 
 ---
 
-#### 11. [AI Long-Form Story Generator with Varied Context](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/NLP/Ai_Long_form_Story_Generator_with_Varied_Context.ipynb)
+#### 10. [Prompt-to-Synopsis Generator (Fine-Tuning)](NLP/Prompt_to_Synopsis_Generator_%28Fine-Tuning%29.ipynb)
 
-* **Situation**: Longer context improves story coherence but increases complexity.
-* **Task**: Build a model for generating long-form stories.
-* **Action**:
+* **Situation**: Entertainment requires auto-expansion of ideas into story outlines.
+* **Task**: Fine-tune a transformer to generate synopses from prompts.
+* **Action**: Fine-tuned GPT-2 using HuggingFace; applied causal LM loss and LR scheduling.
+* **Result**: Generated coherent multi-sentence synopses.
+* **Tags**: `Transformers` · `GPT-2` · `Fine-Tuning` · `Text Generation`
+  ![Image](https://th.bing.com/th/id/R.62fed4c6ba6af08871ed40c89f4d0a44?rik=bHeTpfghWffTSQ\&riu=http%3a%2f%2fsusancushman.com%2fwp-content%2fuploads%2f2012%2f10%2f100_12691.jpg\&ehk=u%2fiowcjKxXZcabvS21Q2ExLG0g6YsIK6vJcgkcE7Xxc%3d\&risl=\&pid=ImgRaw\&r=0)
 
-  * Used **transformer causal language models**.
-  * Tested varying context sizes and prompt strategies.
-* **Result**: Generated coherent multi-paragraph stories; longer context improved narrative consistency.
-* **Tags**: `Transformers` · `Causal LM` · `Text Generation` · `HuggingFace` · `Long-Context Modeling`
+---
 
-<img src="assets/long_story.png" width="500">
+#### 11. [AI Long-Form Story Generator with Varied Context](NLP/Ai_Long_form_Story_Generator_with_Varied_Context.ipynb)
+
+* **Situation**: Long-context transformers improve narrative flow.
+* **Task**: Generate long-form stories using varying input context.
+* **Action**: Built transformer causal LM, tested multiple prompt sizes.
+* **Result**: Produced coherent multi-paragraph stories with consistent characters.
+* **Tags**: `Transformers` · `Causal LM` · `Long-Context Modeling` · `Text Generation`
 
 ---
 
 ### 🔮 Multi-Modal AI
 
-#### 12. [AI Imagining Stories from Images](https://github.com/sanskarGupta551/ai-projects-nlp-computer-vision/blob/main/Multi-modal/Ai_Imagining_Stories_from_Images.ipynb)
+#### 12. [AI Imagining Stories from Images](Multi-modal/Ai_Imagining_Stories_from_Images.ipynb)
 
-* **Situation**: Bridging computer vision with NLP enables storytelling from images.
-* **Task**: Generate stories based on input images.
-* **Action**:
+* **Situation**: Images often imply hidden narratives.
+* **Task**: Generate creative stories from input images.
+* **Action**: Used HuggingFace pipelines (vision encoders + causal LM).
+* **Result**: Produced imaginative narratives across diverse images.
+* **Tags**: `Multi-Modal AI` · `Vision+Language` · `Transformers` · `Story Generation`
 
-  * Extracted image features via pretrained vision encoders.
-  * Used HuggingFace causal language models to generate narratives.
-* **Result**: Produced imaginative, contextually relevant stories from fantasy to real-world scenes.
-* **Tags**: `Multi-Modal AI` · `Vision + Language` · `Transformers` · `HuggingFace` · `Image-to-Text`
-
-<img src="assets/story_from_image.png" width="500">
 
 ---
 
